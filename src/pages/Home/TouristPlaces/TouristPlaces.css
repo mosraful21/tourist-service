@@ -1,0 +1,30 @@
+.imgStyle {
+  border-radius: 0 40px 0 40px;
+}
+
+.content {
+  bottom: 0;
+  padding: 8px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.card{
+  transition: .3s;
+}
+.card:hover{
+  transform: translateY(-5px);
+  .text{
+    color: orangered;
+    font-size: 10x;
+    font-weight: 700;
+  }
+  .content {
+    bottom: 0;
+    padding: 8px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+}
