@@ -3,6 +3,8 @@ import Main from "./Layout/Main";
 import Home from "./pages/Home/Home/Home";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/Login/SignUp";
+import AllTouristPlaces from "./pages/AllTouristPlaces/AllTouristPlaces";
+import PlaceDetails from "./pages/PlaceDetails/PlaceDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +15,14 @@ function App() {
         {
           path: '/',
           element: <Home/>
+        },
+        {
+          path: '/allplaces',
+          element: <AllTouristPlaces/>
+        },
+        {
+          path: '/details/:id',
+          element: <PlaceDetails/>,
         },
         {
           path: '/login',

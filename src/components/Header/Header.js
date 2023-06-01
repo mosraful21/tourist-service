@@ -5,7 +5,7 @@ const Header = () => {
 
     const menuItem = <>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Home</Link>
-            <Link to='/' className="block text-lg text-white hover:text-orange-600">About</Link>
+            <Link to='/allplaces' className="block text-lg text-white hover:text-orange-600">Places</Link>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Services</Link>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Contact</Link>
             <Link to='/login' className="block text-lg text-white hover:text-orange-600">Login</Link>
@@ -17,11 +17,11 @@ const Header = () => {
     };
   
     return (
-      <nav className="bg-gray-900">
+      <nav className="bg-gray-900 fixed top-0 left-0 right-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <a href="/" className="text-white text-lg font-bold animate-bounce">Logo</a>
+              <Link to="/" className="text-white text-lg font-bold animate-bounce">Logo</Link>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">

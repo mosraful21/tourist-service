@@ -3,9 +3,8 @@ import banner from "../../../assets/hero.png";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="fade-in">
       <img src={banner} alt="" />
-      
     </div>
   );
 };

@@ -5,7 +5,7 @@ const SignUp = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:bg-gray-700 md:bg-gray-700">
       <div className="max-w-md w-full bg-gray-300 p-8 lg:my-10 md:my-10 shadow-md lg:rounded-xl md:rounded-xl">
-        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Sign Up</h2>
         <form>
           <div className="mb-4">
             <label htmlFor="name" className="block mb-2 text-sm font-medium">

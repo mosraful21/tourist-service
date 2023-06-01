@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,5 +7,94 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
+
+/* TouristPlaces component style Start */
+.imgStyle {
+  border-radius: 0 40px 0 40px;
+}
+
+.content {
+  bottom: 0;
+  padding: 8px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  .text {
+    color: orangered;
+    font-size: 10x;
+    font-weight: 700;
+  }
+  .content {
+    bottom: 0;
+    padding: 8px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+}
+/* TouristPlaces component style End */
+
+/* Fade in design Start */
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Fade in design End */
+

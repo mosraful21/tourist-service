@@ -15,7 +15,7 @@ const CustomerSection = () => {
         <p className="text-lg">Discover the Bangladesh with our tourist service. Our private tours offer you a unique and <br /> personalized experience in any destination.</p>
       </div>
 
-      <div class="lg:flex grid grid-cols-2 p-2 justify-between gap-4">
+      <div className="lg:flex grid grid-cols-2 p-2 justify-between gap-4">
         <div className="flex flex-col items-center">
           <img src={icon1} alt="" className="w-24 h-24 rounded-full mb-4" />
           <p className="text-center text-orange-600 font-semibold">
