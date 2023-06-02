@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const PlaceDetails = () => {
-    return (
-        <div>
-           <p> places details</p>
-        </div>
-    );
+ 
+  return (
+    <div>
+      <p> places details</p>
+    </div>
+  );
 };
 
 export default PlaceDetails;

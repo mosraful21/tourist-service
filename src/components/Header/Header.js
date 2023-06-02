@@ -6,9 +6,10 @@ const Header = () => {
     const menuItem = <>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Home</Link>
             <Link to='/places' className="block text-lg text-white hover:text-orange-600">Places</Link>
-            <Link to='/' className="block text-lg text-white hover:text-orange-600">Services</Link>
-            <Link to='/' className="block text-lg text-white hover:text-orange-600">Contact</Link>
+            <Link to='/blog' className="block text-lg text-white hover:text-orange-600">Blog</Link>
+            <Link to='/contact' className="block text-lg text-white hover:text-orange-600">Contact</Link>
             <Link to='/login' className="block text-lg text-white hover:text-orange-600">Login</Link>
+            <Link to='/posts' className="block text-lg text-white hover:text-orange-600">Posts</Link>
         </>
     
     const [isMenuOpen, setMenuOpen] = useState(false);

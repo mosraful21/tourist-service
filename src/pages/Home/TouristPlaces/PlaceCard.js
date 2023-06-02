@@ -6,7 +6,7 @@ const PlaceCard = ({ place }) => {
   const { id, img, title } = place;
 
   return (
-    <Link to={`/details/${id}`} className="relative card">
+    <Link to={`/place/${id}`} className="relative card">
       <img src={img} alt="" className="w-full h-60 imgStyle" />
       <div className="absolute content imgStyle">
         <h5 className="text-xl ml-5 font-semibold text-white text">{title}</h5>

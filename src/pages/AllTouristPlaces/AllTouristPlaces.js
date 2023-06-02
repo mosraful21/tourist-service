@@ -26,7 +26,7 @@ const AllTouristPlaces = () => {
   }
 
   if (!touristPlace) {
-    return <p>Data not found.</p>;
+    return <p className="text-center p-80">Data not found.</p>;
   }
 
 
@@ -49,7 +49,7 @@ const AllTouristPlaces = () => {
           <div className="col-span-3">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-3">
               {touristPlace.map((place) => (
-                <Link to={`/details/${place.id}`} key={place.id} className="relative card">
+                <Link to={`/place/${place.id}`} key={place.id} className="relative card">
                   <img
                     src={place.img}
                     alt=""
