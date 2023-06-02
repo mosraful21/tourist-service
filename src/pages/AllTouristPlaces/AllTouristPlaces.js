@@ -7,23 +7,33 @@ import PlaceTimeSedule from "../../components/PlaceTimeSedule/PlaceTimeSedule";
 const AllTouristPlaces = () => {
   const [touristPlace, setTouristPlace] = useState([]);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("places.json");
-        const data = await res.json();
+    setLoading(true);
+
+    fetch("places.json")
+      .then((response) => response.json())
+      .then((data) => {
         setTouristPlace(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
+        setLoading(false);
+      })
+      .catch((error) => console.log(error));
   }, []);
+
+  if (loading) {
+    return <p className="text-center p-80">Loading...</p>;
+  }
+
+  if (!touristPlace) {
+    return <p>Data not found.</p>;
+  }
+
 
   return (
     <div className="bg-slate-100">
       <div className="fade-in">
-        <img src={banner} alt="" />
+        <img src={banner} alt="" className="w-full"/>
       </div>
 
       <div className="lg:py-12 py-3">
@@ -39,7 +49,7 @@ const AllTouristPlaces = () => {
           <div className="col-span-3">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-3">
               {touristPlace.map((place) => (
-                <Link to={`/details/${place.place_id}`} key={place.place_id} className="relative card">
+                <Link to={`/details/${place.id}`} key={place.id} className="relative card">
                   <img
                     src={place.img}
                     alt=""

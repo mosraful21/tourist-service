@@ -4,7 +4,6 @@ import TouristPlaces from "../TouristPlaces/TouristPlaces";
 import SeduleSection from "../SeduleSection/SeduleSection";
 import CustomerSection from "../CustomerSection/CustomerSection";
 import { Link } from "react-router-dom";
-import Counter from "../../../components/Counter/Counter";
 
 const Home = () => {
   return (
@@ -20,7 +19,7 @@ const Home = () => {
           <p className="lg:text-4xl text-3xl font-semibold text-orange-600">
             Tourist Places:
           </p>
-          <Link to="/allplaces" className="text-xl text-blue-600 font-bold">
+          <Link to="/places" className="text-xl text-blue-600 font-bold">
             See All
           </Link>
         </div>
@@ -34,8 +33,6 @@ const Home = () => {
       <div className="bg-slate-200">
         <CustomerSection />
       </div>
-
-      <Counter/>
     </div>
   );
 };

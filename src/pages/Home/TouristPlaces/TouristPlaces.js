@@ -20,7 +20,7 @@ const TouristPlaces = () => {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5 md:gap-4 gap-3 lg:px-0 px-2">
       {touristPlace.slice(0, 6).map((place) => (
-        <PlaceCard key={place.place_id} place={place}></PlaceCard>
+        <PlaceCard key={place.id} place={place}></PlaceCard>
       ))}
     </div>
   );

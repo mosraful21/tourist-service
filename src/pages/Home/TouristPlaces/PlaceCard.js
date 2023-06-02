@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ImLocation2 } from "react-icons/im";
 
 const PlaceCard = ({ place }) => {
-  const { place_id, img, title } = place;
+  const { id, img, title } = place;
 
   return (
-    <Link to={`/details/${place_id}`} className="relative card">
+    <Link to={`/details/${id}`} className="relative card">
       <img src={img} alt="" className="w-full h-60 imgStyle" />
       <div className="absolute content imgStyle">
         <h5 className="text-xl ml-5 font-semibold text-white text">{title}</h5>

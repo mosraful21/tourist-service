@@ -5,7 +5,7 @@ const Header = () => {
 
     const menuItem = <>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Home</Link>
-            <Link to='/allplaces' className="block text-lg text-white hover:text-orange-600">Places</Link>
+            <Link to='/places' className="block text-lg text-white hover:text-orange-600">Places</Link>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Services</Link>
             <Link to='/' className="block text-lg text-white hover:text-orange-600">Contact</Link>
             <Link to='/login' className="block text-lg text-white hover:text-orange-600">Login</Link>

@@ -13,26 +13,26 @@ function App() {
       element: <Main />,
       children: [
         {
-          path: '/',
-          element: <Home/>
+          path: "/",
+          element: <Home />,
         },
         {
-          path: '/allplaces',
-          element: <AllTouristPlaces/>
+          path: "/places",
+          element: <AllTouristPlaces />,
         },
         {
-          path: '/details/:id',
-          element: <PlaceDetails/>,
+          path: "/details/:id",
+          element: <PlaceDetails />,
         },
         {
-          path: '/login',
-          element: <Login/>
+          path: "/login",
+          element: <Login />,
         },
         {
-          path: '/signup',
-          element: <SignUp/>
+          path: "/signup",
+          element: <SignUp />,
         },
-      ]
+      ],
     },
   ]);
 
