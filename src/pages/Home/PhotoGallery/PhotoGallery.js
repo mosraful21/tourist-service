@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const image = [
   {
@@ -41,20 +42,46 @@ const image = [
     image:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
   },
+  {
+    id: 9,
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    id: 10,
+    image:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+  },
 ];
 
 const PhotoGallery = () => {
   return (
-    <div className="grid grid-cols-4">
-      {image.map((image) => (
-        <div className="overflow-hidden cursor-pointer" key={image.id}>
-          <img
-            src={image.image}
-            alt=""
-            className="w-full h-full object-cover object-center transition duration-250 transform hover:scale-125"
-          />
-        </div>
-      ))}
+    <div className="lg:py-10 md:py-5 py-3">
+      <p className="lg:text-4xl text-3xl font-semibold text-orange-600 text-center mb-5">
+        Photo Gallery
+      </p>
+      <Marquee pauseOnHover={true} className="mb-2">
+        {image.map((Item, index) => (
+          <div key={index} className="mx-1">
+            <img
+              src={Item.image}
+              alt="brand"
+              className="lg:w-80 lg:h-56 w-28 h-20"
+            />
+          </div>
+        ))}
+      </Marquee>
+      <Marquee pauseOnHover={true} direction="right">
+        {image.map((Item, index) => (
+          <div key={index} className="mx-1">
+            <img
+              src={Item.image}
+              alt="brand"
+              className="lg:w-80 lg:h-56 w-28 h-20"
+            />
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 };

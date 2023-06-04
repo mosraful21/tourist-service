@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Counter.css";
 
 const Counter = () => {
   const [countLoaded, setCountLoaded] = useState(false);
@@ -29,7 +28,7 @@ const Counter = () => {
         const targetValue = parseInt(element.dataset.value, 10);
         let currentCount = 0;
         const increment = Math.ceil(targetValue / 100);
-        const duration = 500 / increment;
+        const duration = 100 / increment;
 
         const timer = setInterval(() => {
           currentCount += increment;
@@ -57,17 +56,81 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="bg-blue-500" data-diff="100">
-      <div className="">
-        <div
-          ref={(el) => (countRefs.current[0] = el)}
-          data-value="900"
-          className="count-digit"
-        >
-          0
+    <div className="my-12">
+      <div className="container w-max-[1170px] lg:flex justify-center items-center">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 px-2">
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[70px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[0] = el)}
+            data-value="12"
+            className="text-5xl font-bold"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold">Count Title</p>
         </div>
-        <div className="count-title">Count Title</div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[10px]  w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[1] = el)}
+            data-value="15"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[-50px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[2] = el)}
+            data-value="102"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 w-full lg:ml-[-110px] lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[3] = el)}
+            data-value="1200"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[190px] lg:mt-[-100px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[4] = el)}
+            data-value="520"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[130px] lg:mt-[-100px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[5] = el)}
+            data-value="621"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
+        <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:mt-[-100px] lg:ml-[70px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">
+          <p
+            ref={(el) => (countRefs.current[6] = el)}
+            data-value="120"
+            className="text-5xl font-bold text-center"
+          >
+            0
+          </p>
+          <p className="text-2xl font-semibold text-center">Count Title</p>
+        </div>
       </div>
+    </div>
     </div>
   );
 };

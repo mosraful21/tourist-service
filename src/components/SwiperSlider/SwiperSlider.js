@@ -14,9 +14,7 @@ const SwiperSlider = () => {
   return (
     <Swiper
       effect={"cards"}
-      grabCursor={true}
       modules={[EffectCards]}
-      autoplay={true}
       className="mySwiper w-3/5 lg:h-96"
     >
       <SwiperSlide>

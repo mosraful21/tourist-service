@@ -3,24 +3,38 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div className="flex flex-col items-center justify-center lg:bg-gray-700 md:bg-gray-700">
-      <div className="max-w-md w-full bg-gray-300 p-8 lg:my-10 md:my-10 shadow-md lg:rounded-xl md:rounded-xl">
-        <h2 className="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+    <div className="flex flex-col items-center justify-center bg-gray-600 lg:py-12 md:py-10 p-2">
+      <div className="rounded-xl text-white bg-gray-900 max-w-md w-full p-8">
+        <h2 className="text-3xl text-center font-bold mb-6">Sign Up</h2>
         <form>
-          <div className="mb-4">
-            <label htmlFor="name" className="block mb-2 text-sm font-medium">
-              Name
-            </label>
-            <input
-              type="name"
-              id="name"
-              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none"
-              placeholder="Enter your name"
-              required
-            />
+          <div className="mb-2 flex gap-2 justify-between">
+            <div className="w-1/2 input-group">
+              <label htmlFor="firstName" className="text-sm font-medium">
+                First Name
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div className="w-1/2 input-group">
+              <label htmlFor="lastName" className="text-sm font-medium">
+                Last Name
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none"
+                placeholder="Last Name"
+                required
+              />
+            </div>
           </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium">
+          <div className="mb-2 input-group">
+            <label htmlFor="email" className="block text-sm font-medium">
               Email
             </label>
             <input
@@ -31,7 +45,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 input-group">
             <label
               htmlFor="password"
               className="block mb-2 text-sm font-medium"
@@ -47,48 +61,8 @@ const SignUp = () => {
             />
           </div>
 
-          {/* ********************************* */}
-          <div className="mb-4 flex gap-2 justify-between">
-            <div className="w-1/2">
-              <label htmlFor="phone" className="mb-2 text-sm font-medium">
-                Phone Number
-              </label>
-              <input
-                type="phone"
-                id="phone"
-                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none"
-                placeholder="Enter phone"
-                required
-              />
-            </div>
-            <div className="w-1/2">
-              <label
-                htmlFor="gender"
-                className="mb-2 text-sm font-medium"
-              >
-                Gender
-              </label>
-                <select
-                  id="gender"
-                  name="gender"
-                  className="w-full px-3 py-[9px] border border-gray-300 rounded focus:outline-none"
-                >
-                  <option value="">Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
-                </select>
-            </div>
-          </div>
-          {/* ********************************** */}
-
-          <button
-            type="submit"
-            className="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
-          >
-            Login
-          </button>
-          <p className="text-center font-semibold mt-3">
+          <button class="btn-donate w-full">Sign Up</button>
+          <p className="text-center signup font-semibold mt-3">
             Already have an account?{" "}
             <Link to="/login" className="text-orange-700">
               Login

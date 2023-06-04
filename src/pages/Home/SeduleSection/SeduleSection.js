@@ -20,9 +20,11 @@ const SeduleSection = () => {
 
   return (
     <div className="bg-slate-100 lg:py-12 md:py-4 py-2">
-        <div>
-            <p className="lg:text-5xl text-3xl font-bold text-orange-600 text-center mb-5">Where are you going?</p>
-        </div>
+      <div>
+        <p className="lg:text-5xl text-3xl font-bold text-orange-600 text-center mb-5">
+          Where are you going?
+        </p>
+      </div>
       <div className="lg:flex grid md:grid-cols-2 md:px-2 justify-center gap-4">
         <div className="flex items-center border-2 border-gray-300 rounded-md py-2 px-4">
           <BsFillGeoAltFill className="w-6 h-6 text-gray-400 mr-2" />
@@ -55,9 +57,7 @@ const SeduleSection = () => {
           />
         </div>
         <div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-[9px] px-20 rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
-            FIND A TOUR
-          </button>
+          <button className="custom-btn btn-1 text-white font-bold rounded py-[9px] px-20">FIND A TOUR</button>
         </div>
       </div>
     </div>

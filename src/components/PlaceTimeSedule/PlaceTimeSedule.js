@@ -57,9 +57,7 @@ const PlaceTimeSedule = () => {
           />
         </div>
         <div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-full rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
-            FIND A TOUR
-          </button>
+          <button className="custom-btn btn-1 w-full text-white font-bold rounded py-[9px] px-20">FIND A TOUR</button>
         </div>
       </div>
     </div>
