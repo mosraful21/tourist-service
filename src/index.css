@@ -10,6 +10,16 @@
   font-family: "Lora", serif;
 }
 
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+}
+
 /* TouristPlaces component style Start */
 .imgStyle {
   border-radius: 0 40px 0 40px;
@@ -42,6 +52,38 @@
     width: 100%;
   }
 }
+
+.seeAllBtn {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 10px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 5px 10px;
+ }
+ 
+ .seeAllBtn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
 /* TouristPlaces component style End */
 
 /* Fade in design Start */
@@ -139,8 +181,3 @@
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 /* Button Design End */
-
-.container{
-  max-width: 1170px;
-  margin: 0 auto;
-}

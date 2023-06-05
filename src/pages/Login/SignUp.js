@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-600 lg:py-12 md:py-10 p-2">
-      <div className="rounded-xl text-white bg-gray-900 max-w-md w-full p-8">
+    <div className="flex flex-col items-center justify-center lg:py-12 md:py-10 p-2">
+      <div className="rounded-xl text-white bg-gray-900 hover:drop-shadow-[0_40px_40px_rgba(0,0,0,0.25)] max-w-md w-full p-8">
         <h2 className="text-3xl text-center font-bold mb-6">Sign Up</h2>
         <form>
-          <div className="mb-2 flex gap-2 justify-between">
-            <div className="w-1/2 input-group">
+          <div className="mb-2 lg:flex gap-2 justify-between">
+            <div className="lg:w-1/2 input-group lg:mb-0 mb-2">
               <label htmlFor="firstName" className="text-sm font-medium">
                 First Name
               </label>
@@ -20,7 +20,7 @@ const SignUp = () => {
                 required
               />
             </div>
-            <div className="w-1/2 input-group">
+            <div className="lg:w-1/2 input-group">
               <label htmlFor="lastName" className="text-sm font-medium">
                 Last Name
               </label>
@@ -61,7 +61,7 @@ const SignUp = () => {
             />
           </div>
 
-          <button class="btn-donate w-full">Sign Up</button>
+          <button className="btn-donate w-full">Sign Up</button>
           <p className="text-center signup font-semibold mt-3">
             Already have an account?{" "}
             <Link to="/login" className="text-orange-700">

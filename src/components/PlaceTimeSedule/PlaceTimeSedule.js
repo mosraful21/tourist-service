@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { BsFillCalendar2WeekFill, BsFillGeoAltFill } from "react-icons/bs";
+import logo1 from "../../assets/facebook.png";
+import logo2 from "../../assets/youtube.png";
+import logo3 from "../../assets/twitter.png";
+import logo4 from "../../assets/instagram.png";
 
 const PlaceTimeSedule = () => {
   const [firstDate, setFirstDate] = useState(null);
@@ -56,8 +60,22 @@ const PlaceTimeSedule = () => {
             minDate={firstDate || today}
           />
         </div>
-        <div>
-          <button className="custom-btn btn-1 w-full text-white font-bold rounded py-[9px] px-20">FIND A TOUR</button>
+        <div className="mt-3">
+          <button className="custom-btn btn-1 w-full text-white font-bold rounded py-[9px]">
+            FIND A TOUR
+          </button>
+        </div>
+      </div>
+
+      <div className="lg:mt-10 mt-3 p-2">
+        <h2 className="text-2xl font-bold text-orange-600 text-center lg:mb-4 mb-2">
+          Follow Social Media
+        </h2>
+        <div className="flex gap-4 justify-center">
+          <img src={logo1} alt="" className="w-12 h-12 animate-pulse cursor-pointer" />
+          <img src={logo2} alt="" className="w-12 h-12 animate-pulse cursor-pointer" />
+          <img src={logo3} alt="" className="w-12 h-12 animate-pulse cursor-pointer" />
+          <img src={logo4} alt="" className="w-12 h-12 animate-pulse cursor-pointer" />
         </div>
       </div>
     </div>

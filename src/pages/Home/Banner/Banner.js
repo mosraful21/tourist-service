@@ -1,44 +1,17 @@
 import React from "react";
-import banner from "../../../assets/hero.png";
+import banner from "../../../assets/banner.jpg";
 
 const Banner = () => {
   return (
-    <div className="fade-in">
+    <div className="fade-in relative">
       <img src={banner} alt="" className="w-full" />
+      <div className="absolute banner flex flex-col items-center justify-center text-center w-full lg:h-full h-full bottom-0">
+        <h1 className="lg:text-6xl md:text-3xl text-lg font-bold font text-white mb-2">
+        JOURNEY  TO <br /> EXPLORE <span className="text-green-500">BANGLADESH</span>
+        </h1>
+      </div>
     </div>
   );
 };
 
 export default Banner;
-
-
-
-
-
-
-
-// import React from "react";
-// import Slider from "react-slick";
-
-// const Banner = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true, 
-//     speed: 500, 
-//     autoplay: true, 
-//     autoplaySpeed: 2000, 
-//   };
-
-//   return (
-//     <div className="fade-in">
-//       <Slider {...settings}>
-//         <img className="w-full h-[500px]" src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="" />
-//         <img className="w-full h-[500px]" src="https://images.pexels.com/photos/15286/pexels-photo.jpg?cs=srgb&dl=pexels-luis-del-r%C3%ADo-15286.jpg&fm=jpg" alt="" />
-//         <img className="w-full h-[500px]" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg" alt="" />
-//         <img className="w-full h-[500px]" src="https://images.pexels.com/photos/15286/pexels-photo.jpg?cs=srgb&dl=pexels-luis-del-r%C3%ADo-15286.jpg&fm=jpg" alt="" />
-//     </Slider>
-//     </div>
-//   );
-// };
-
-// export default Banner;

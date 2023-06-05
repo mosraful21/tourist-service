@@ -1,13 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
-import img1 from "../../assets/Destination1.png";
-import img2 from "../../assets/Destination2.png";
-import img3 from "../../assets/Destination3.png";
-import img4 from "../../assets/Destination4.png";
-import img5 from "../../assets/Destination5.png";
-import img6 from "../../assets/Destination6.png";
-import img7 from "../../assets/blog2.jpg";
+import img1 from "../../assets/blog1.jpg";
+import img2 from "../../assets/blog6.jpg";
+import img3 from "../../assets/natural1.jpg";
+import img4 from "../../assets/blog2.jpg";
+import img5 from "../../assets/natural2.jpg";
+import img6 from "../../assets/natural3.jpg";
+import img7 from "../../assets/natural4.jpg";
 import img8 from "../../assets/blog3.jpg";
 
 const SwiperSlider = () => {

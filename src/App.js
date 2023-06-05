@@ -5,10 +5,9 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/Login/SignUp";
 import AllTouristPlaces from "./pages/AllTouristPlaces/AllTouristPlaces";
 import PlaceDetails from "./pages/PlaceDetails/PlaceDetails";
-import Posts from "./pages/Posts/Posts";
-import Post from "./pages/Posts/Post";
 import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
+import ErrorPage from "./components/Footer/ErrorPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,22 +39,16 @@ function App() {
           path: "/signup",
           element: <SignUp />,
         },
-
-        {
-          path: "/posts",
-          element: <Posts />,
-        },
-        {
-          path: "/posts/post/:id",
-          element: <Post />,
-        },
-
         {
           path: "/contact",
           element: <Contact />,
         },
       ],
     },
+    {
+      path: '*',
+      element: <ErrorPage/>
+    }
   ]);
 
   return <RouterProvider router={router}></RouterProvider>;

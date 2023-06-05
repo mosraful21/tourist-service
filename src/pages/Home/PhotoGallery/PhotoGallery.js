@@ -56,8 +56,8 @@ const image = [
 
 const PhotoGallery = () => {
   return (
-    <div className="lg:py-10 md:py-5 py-3">
-      <p className="lg:text-4xl text-3xl font-semibold text-orange-600 text-center mb-5">
+    <div className="lg:py-16 md:py-5 py-3">
+      <p className="lg:text-5xl text-3xl font-semibold text-orange-600 text-center lg:mb-10 mb-3">
         Photo Gallery
       </p>
       <Marquee pauseOnHover={true} className="mb-2">

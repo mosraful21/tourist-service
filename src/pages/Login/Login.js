@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-600 lg:py-12 md:py-10 p-2">
-      <div className="rounded-xl text-white bg-gray-900 max-w-md w-full p-8">
+    <div className="flex flex-col items-center justify-center lg:py-12 md:py-10 p-2">
+      <div className="rounded-xl text-white bg-gray-900 hover:drop-shadow-[0_40px_40px_rgba(0,0,0,0.25)] max-w-md w-full p-8">
         <p className="text-3xl text-center font-bold mb-4">Login</p>
         <form className="form">
           <div className="input-group mb-2">
@@ -33,7 +33,7 @@ const Login = () => {
               </a>
             </div>
           </div>
-          <button class="btn-donate w-full">Login</button>
+          <button className="btn-donate w-full">Login</button>
         </form>
         <div className="social-message">
           <div className="line"></div>

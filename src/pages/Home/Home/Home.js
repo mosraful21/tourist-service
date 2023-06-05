@@ -16,12 +16,15 @@ const Home = () => {
       </div>
       <div className="max-w-7xl mx-auto lg:my-8 my-2">
         <div className="flex justify-between items-center lg:px-0 px-2 mb-2">
-          <p className="lg:text-4xl text-3xl font-semibold text-orange-600">
+          <p className="lg:text-5xl text-3xl font-semibold text-orange-600">
             Tourist Places:
           </p>
-          <Link to="/places" className="text-xl text-blue-600 font-bold">
-            See All
-          </Link>
+          <button>
+            {" "}
+            <Link to="/places" className="text-xl text-white font-bold seeAllBtn">
+              See All
+            </Link>
+          </button>
         </div>
         <TouristPlaces />
       </div>
