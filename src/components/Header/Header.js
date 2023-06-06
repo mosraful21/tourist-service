@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo.png'
 
 const Header = () => {
 
@@ -21,7 +22,9 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link to="/" className="text-white text-lg font-bold animate-bounce">Logo</Link>
+              <a href="/" className="text-white text-lg font-bold animate-bounce">
+                Logo
+              </a>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
