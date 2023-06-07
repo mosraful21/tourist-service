@@ -1,5 +1,6 @@
 import React from "react";
-import img from '../../assets/blogban.jpg';
+import img from "../../assets/blogban.jpg";
+import "./Blog.css";
 
 const Blog = () => {
   return (
@@ -14,7 +15,7 @@ const Blog = () => {
           </div>
 
           <div class="col-start-1 col-end-3 bg-slate-200 text-center">
-          <p>author image</p>
+            <p>author image</p>
             <p>author name</p>
             <p>details</p>
           </div>
@@ -24,18 +25,18 @@ const Blog = () => {
           </div>
 
           <div class="col-end-7 col-span-2 bg-slate-200 text-center">
-          <p>author image</p>
+            <p>author image</p>
             <p>author name</p>
             <p>details</p>
           </div>
 
           <div class="col-start-2 col-end-4 bg-slate-200 text-center">
-          <p>author image</p>
+            <p>author image</p>
             <p>author name</p>
             <p>details</p>
           </div>
           <div class="col-start-4 col-end-6 bg-slate-200 text-center">
-          <p>author image</p>
+            <p>author image</p>
             <p>author name</p>
             <p>details</p>
           </div>

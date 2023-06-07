@@ -6,6 +6,7 @@ import CustomerSection from "../CustomerSection/CustomerSection";
 import { Link } from "react-router-dom";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Counter from "../../../components/Counter/Counter";
+import TeamMember from "../TeamMember/TeamMember";
 
 const Home = () => {
   return (
@@ -21,7 +22,10 @@ const Home = () => {
           </p>
           <button>
             {" "}
-            <Link to="/places" className="text-xl text-white font-bold seeAllBtn">
+            <Link
+              to="/places"
+              className="text-xl text-white font-bold seeAllBtn"
+            >
               See All
             </Link>
           </button>
@@ -38,6 +42,10 @@ const Home = () => {
       <PhotoGallery />
 
       <Counter />
+
+      <div className="lg:max-w-7xl w-4/5 mx-auto lg:my-8 my-2">
+        <TeamMember />
+      </div>
     </div>
   );
 };
