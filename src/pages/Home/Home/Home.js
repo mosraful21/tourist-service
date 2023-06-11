@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Counter from "../../../components/Counter/Counter";
 import TeamMember from "../TeamMember/TeamMember";
+import TourAdvice from "../TourAdvice/TourAdvice";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="hidden lg:block">
         <SeduleSection />
       </div>
+      <TourAdvice/>
       <div className="max-w-7xl mx-auto lg:my-8 my-2">
         <div className="flex justify-between items-center lg:px-0 px-2 mb-2">
           <p className="lg:text-5xl text-3xl font-semibold text-orange-600">

@@ -8,6 +8,7 @@ import PlaceDetails from "./pages/PlaceDetails/PlaceDetails";
 import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import ErrorPage from "./components/Footer/ErrorPage";
+import TourAdviceDetails from "./pages/Home/TourAdvice/TourAdviceDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ function App() {
         {
           path: "/place/:id",
           element: <PlaceDetails />,
+        },
+        {
+          path: "/advice/:id",
+          element: <TourAdviceDetails/>
         },
         {
           path: "/blog",

@@ -1,0 +1,20 @@
+.inputFooter {
+    padding: 14px;
+    font-size: 16px;
+    color: black;
+    border: 2px solid #fff;
+    margin-right: -2px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .buttonFooter {
+    border: none;
+    background-color: #1363DF;
+    text-decoration: none;
+    padding: 14px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    border-radius:  0  5px 5px 0   ;
+  }
