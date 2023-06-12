@@ -19,8 +19,8 @@ const Home = () => {
       <TourAdvice/>
       <div className="max-w-7xl mx-auto lg:my-8 my-2">
         <div className="flex justify-between items-center lg:px-0 px-2 mb-2">
-          <p className="lg:text-5xl text-3xl font-semibold text-orange-600">
-            Tourist Places:
+          <p className="lg:text-4xl text-3xl font-semibold text-gray-950">
+            Tourist Spots:
           </p>
           <button>
             {" "}

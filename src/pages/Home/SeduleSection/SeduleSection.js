@@ -21,7 +21,7 @@ const SeduleSection = () => {
   return (
     <div className="bg-slate-100 lg:py-12 md:py-4 py-2">
       <div>
-        <p className="lg:text-5xl text-3xl font-bold text-orange-600 text-center mb-5">
+        <p className="lg:text-4xl text-3xl font-bold text-gray-950 text-center mb-5">
           Where are you going?
         </p>
       </div>

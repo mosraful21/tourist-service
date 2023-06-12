@@ -15,9 +15,9 @@ const AllTouristPlaces = () => {
       </div>
 
       <div className="lg:py-12">
-        <p className="lg:text-4xl text-3xl text-center font-semibold text-orange-600 lg:mb-12 md:mb-6 mb-2 lg:px-0">
-          Our Tourist Services
-        </p>
+        <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3"><span className='border-b-2 border-gray-500 rounded-lg'>
+      Popular <span className="font-bold">Tourist Spots</span> </span>
+      </p>
 
         <div className="grid lg:grid-cols-4 grid-cols-3 gap-5 lg:w-11/12 mx-auto p-3">
           <div className="hidden lg:block sticky top-20 self-start bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900">

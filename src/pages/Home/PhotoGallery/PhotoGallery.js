@@ -57,8 +57,8 @@ const image = [
 const PhotoGallery = () => {
   return (
     <div className="lg:py-16 md:py-5 py-3">
-      <p className="lg:text-5xl text-3xl font-semibold text-orange-600 text-center lg:mb-10 mb-3">
-        Photo Gallery
+      <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3"><span className='border-b-2 border-gray-500 rounded-lg'>
+      Photos <span className="font-bold">Gallery</span> </span>
       </p>
       <Marquee pauseOnHover={true} className="mb-2">
         {image.map((Item, index) => (

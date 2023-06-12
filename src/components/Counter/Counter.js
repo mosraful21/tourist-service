@@ -57,9 +57,9 @@ const Counter = () => {
 
   return (
     <div className="my-5">
-      <h1 className="lg:text-5xl text-3xl font-semibold text-orange-600 text-center lg:mb-12 mb-3">
-        Division Serve
-      </h1>
+      <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3"><span className='border-b-2 border-gray-500 rounded-lg'>
+      Division <span className="font-bold">Serve</span> </span>
+      </p>
       <div className="container w-max-[1170px] lg:flex justify-center items-center">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 px-2">
           <div className="flex flex-col justify-center items-center border-2 border-zinc-600 lg:ml-[70px] w-full lg:w-72 h-52  lg:h-72 border-dashed rounded-full">

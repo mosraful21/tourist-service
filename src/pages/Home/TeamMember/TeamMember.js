@@ -47,14 +47,16 @@ const members = [
 const TeamMember = () => {
   return (
     <div className="lg:mt-14 mt-10">
-      <p className="lg:text-5xl text-3xl font-semibold text-orange-600 text-center lg:mb-8 mb-3">
-        Our Team Member
+      <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3">
+        <span className="border-b-2 border-gray-500 rounded-lg">
+          Team <span className="font-bold">Members</span>{" "}
+        </span>
       </p>
       <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-5">
         {members.map((member, index) => (
           <div className="book bg-gray-200" key={index}>
             <div className="w-4/5 float-right p-3">
-              <img src={member.img} alt="" className="w-24 h-24 rounded-2xl"/>
+              <img src={member.img} alt="" className="w-24 h-24 rounded-2xl" />
               <p className="font-semibold">{member.name}</p>
               <p className="">{member.email}</p>
               <p className="">{member.phone}</p>
