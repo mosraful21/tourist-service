@@ -56,8 +56,8 @@ const Counter = () => {
   });
 
   return (
-    <div className="my-5">
-      <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3"><span className='border-b-2 border-gray-500 rounded-lg'>
+    <div className="my-5 lg:mb-32 mb-20">
+      <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-5"><span className='border-b-2 border-gray-500 rounded-lg'>
       Division <span className="font-bold">Serve</span> </span>
       </p>
       <div className="container w-max-[1170px] lg:flex justify-center items-center">

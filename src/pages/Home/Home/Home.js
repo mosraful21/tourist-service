@@ -6,8 +6,8 @@ import CustomerSection from "../CustomerSection/CustomerSection";
 import { Link } from "react-router-dom";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Counter from "../../../components/Counter/Counter";
-import TeamMember from "../TeamMember/TeamMember";
 import TourAdvice from "../TourAdvice/TourAdvice";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -16,7 +16,9 @@ const Home = () => {
       <div className="hidden lg:block">
         <SeduleSection />
       </div>
-      <TourAdvice/>
+
+      <TourAdvice />
+
       <div className="max-w-7xl mx-auto lg:my-8 my-2">
         <div className="flex justify-between items-center lg:px-0 px-2 mb-2">
           <p className="lg:text-4xl text-3xl font-semibold text-gray-950">
@@ -34,20 +36,27 @@ const Home = () => {
         </div>
         <TouristPlaces />
       </div>
+
       <div className="lg:hidden">
         <SeduleSection />
       </div>
+
       <div className="bg-slate-200">
         <CustomerSection />
+      </div>
+
+      <div className="max-w-7xl mx-auto my-8">
+        <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-5">
+          <span className="border-b-2 border-gray-500 rounded-lg">
+            Travel of <span className="font-bold">this Month</span>
+          </span>
+        </p>
+        <Testimonial />
       </div>
 
       <PhotoGallery />
 
       <Counter />
-
-      <div className="lg:max-w-7xl w-4/5 mx-auto lg:my-8 my-2">
-        <TeamMember />
-      </div>
     </div>
   );
 };

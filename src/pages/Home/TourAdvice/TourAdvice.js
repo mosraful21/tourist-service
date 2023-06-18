@@ -57,7 +57,7 @@ const TourAdvice = () => {
       <p className="lg:text-4xl text-3xl text-gray-950 text-center lg:mb-10 mb-3"><span className='border-b-2 border-gray-500 rounded-lg'>
         Travel <span className="font-bold">Advice</span> </span>
       </p>
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-2 gap-4 max-w-7xl mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-2 gap-4 max-w-7xl mx-auto">
         {content.map((item) => (
           <Link to={`/advice/${item.id}`} key={item.id} className="flex">
             <img src={item.img} alt="" className="w-20 h-20" />

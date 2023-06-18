@@ -181,3 +181,8 @@
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 /* Button Design End */
+
+.sliderSection{
+  width: 90% !important;
+  margin: 0 auto;
+}
