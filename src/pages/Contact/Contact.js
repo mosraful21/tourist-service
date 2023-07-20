@@ -3,10 +3,11 @@ import insta from "../../assets/icon/instagram.png";
 import twi from "../../assets/icon/twitter.png";
 import git from "../../assets/icon/github.png";
 import fb from "../../assets/icon/facebook.png";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
-    <section className="my-12 mt-28 lg:w-full w-11/12 mx-auto">
+    <section className="mt-28 lg:w-full w-11/12 mx-auto">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="col-span-1">
@@ -63,6 +64,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-12">
+        <Footer />
       </div>
     </section>
   );

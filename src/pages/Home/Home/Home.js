@@ -8,6 +8,7 @@ import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Counter from "../../../components/Counter/Counter";
 import TourAdvice from "../TourAdvice/TourAdvice";
 import Testimonial from "../Testimonial/Testimonial";
+import Footer from "../../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -57,6 +58,8 @@ const Home = () => {
       <PhotoGallery />
 
       <Counter />
+
+      <Footer/>
     </div>
   );
 };

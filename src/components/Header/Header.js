@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png'
 
 const Header = () => {
 
@@ -9,6 +8,7 @@ const Header = () => {
             <Link to='/places' className="block text-lg text-white hover:text-orange-600">Places</Link>
             <Link to='/blog' className="block text-lg text-white hover:text-orange-600">Blog</Link>
             <Link to='/contact' className="block text-lg text-white hover:text-orange-600">Contact</Link>
+            <Link to='/dashboard' className="block text-lg text-white hover:text-orange-600">Dashboard</Link>
             <Link to='/login' className="block text-lg text-white hover:text-orange-600">Login</Link>
           </>
     

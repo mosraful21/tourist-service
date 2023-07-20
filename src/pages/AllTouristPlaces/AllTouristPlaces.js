@@ -4,6 +4,7 @@ import { ImLocation2 } from "react-icons/im";
 import banner from "../../assets/placeBanner.jpg";
 import PlaceTimeSedule from "../../components/PlaceTimeSedule/PlaceTimeSedule";
 import placeData from "../../FakeData/PlaceData";
+import Footer from "../../components/Footer/Footer";
 
 const AllTouristPlaces = () => {
   const touristPlace = placeData;
@@ -57,6 +58,8 @@ const AllTouristPlaces = () => {
           </div>
         </div>
       </div>
+
+      <Footer/>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import user3 from "../../assets/user3.jpg";
 import user4 from "../../assets/user4.jpg";
 import user5 from "../../assets/user5.jpg";
 import Slider from "react-slick";
+import Footer from "../../components/Footer/Footer";
 
 const coustomer = [
   {
@@ -138,6 +139,8 @@ const Blog = () => {
           </Slider>
         </div>
       </div>
+
+      <Footer/>
     </div>
   );
 };

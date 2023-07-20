@@ -9,6 +9,7 @@ import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import ErrorPage from "./components/Footer/ErrorPage";
 import TourAdviceDetails from "./pages/Home/TourAdvice/TourAdviceDetails";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -48,6 +49,10 @@ function App() {
           path: "/contact",
           element: <Contact />,
         },
+        {
+          path: "/dashboard",
+          element: <Dashboard/>
+        }
       ],
     },
     {
