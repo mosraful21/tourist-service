@@ -1,6 +1,11 @@
 import React from 'react';
 import './Dashboard.css';
 import img from '../../assets/user1.jpg';
+import client1 from '../../assets/user1.jpg';
+import client2 from '../../assets/user2.jpg';
+import client3 from '../../assets/user3.jpg';
+import client4 from '../../assets/user4.jpg';
+import client5 from '../../assets/user5.jpg';
 
 const Dashboard = () => {
     return (
@@ -37,7 +42,7 @@ const Dashboard = () => {
         {/* Header End */}
       
         {/* Sidebar Start */}
-        <div className="fixed flex flex-col top-32 left-0 w-14 hover:w-64 md:w-64 bg-blue-900 dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar">
+        <div className="fixed flex flex-col top-[120px] left-0 w-14 hover:w-64 md:w-64 bg-blue-900 dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar">
           <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
             <ul className="flex flex-col py-4 space-y-1">
               <li className="px-5 hidden md:block">
@@ -171,7 +176,7 @@ const Dashboard = () => {
                       <tr>
                         <th className="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Referral</th>
                         <th className="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Visitors</th>
-                        <th className="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px"></th>
+                        <th className="px-4 bg-gray-100 dark:bg-gray-600 text-gray-500 dark:text-gray-100 align-middle border border-solid border-gray-200 dark:border-gray-500 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">Progress</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -275,10 +280,10 @@ const Dashboard = () => {
                       <div className="flex-grow flex items-center border-b border-gray-100 dark:border-gray-400 text-sm text-gray-600 dark:text-gray-100 py-2">
                         <div className="flex-grow flex justify-between items-center">
                           <div className="self-center">
-                            <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Nick Mark</a> mentioned <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Sara Smith</a> in a new post
+                            <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="*">Mosraful Habib</a> mentioned <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="*">Noushin Islam</a> in a new post
                           </div>
                           <div className="flex-shrink-0 ml-2">
-                            <a className="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 outline-none" href="#0">
+                            <a className="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 outline-none" href="*">
                               View<span><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" className="transform transition-transform duration-500 ease-in-out"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg></span>
                             </a>
                           </div>
@@ -292,7 +297,7 @@ const Dashboard = () => {
                       <div className="flex-grow flex items-center border-gray-100 text-sm text-gray-600 dark:text-gray-50 py-2">
                         <div className="flex-grow flex justify-between items-center">
                           <div className="self-center">
-                            The post <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Post Name</a> was removed by <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Nick Mark</a>
+                            The post <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Post Name</a> was removed by <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Nafisa Sultana</a>
                           </div>
                           <div className="flex-shrink-0 ml-2">
                             <a className="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 outline-none" href="#0">
@@ -314,10 +319,10 @@ const Dashboard = () => {
                       <div className="flex-grow flex items-center border-gray-100 text-sm text-gray-600 dark:text-gray-50 py-2">
                         <div className="flex-grow flex justify-between items-center">
                           <div className="self-center">
-                            <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">240+</a> users have subscribed to <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="#0">Newsletter #1</a>
+                            <a className="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="*">240+</a> users have subscribed to <a className="font-medium text-gray-800 dark:text-gray-50 dark:hover:text-gray-100 outline-none" href="*">our tourist portal</a>
                           </div>
                           <div className="flex-shrink-0 ml-2">
-                            <a className="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 outline-none" href="#0">
+                            <a className="flex items-center font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 outline-none" href="*">
                               View<span><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" className="transform transition-transform duration-500 ease-in-out"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg></span>
                             </a>
                           </div>
@@ -339,7 +344,7 @@ const Dashboard = () => {
             <div className="md:col-span-2 xl:col-span-1">
               <div className="rounded bg-gray-200 dark:bg-gray-800 p-3">
                 <div className="flex justify-between py-1 text-black dark:text-white">
-                  <h3 className="text-sm font-semibold">Tasks in TO DO</h3>
+                  <h3 className="text-sm font-semibold">Resent tourist places</h3>
                   <svg className="h-4 fill-current text-gray-600 dark:text-gray-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z" /></svg>
                 </div>
                 <div className="text-sm text-black dark:text-gray-50 mt-2">
@@ -347,13 +352,7 @@ const Dashboard = () => {
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">Remove analytics code</div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">
                     Do a mobile first layout
-                    <div className="text-gray-500 dark:text-gray-200 mt-2 ml-2 flex justify-between items-start">
-                      <span className="text-xs flex items-center">
-                        <svg className="h-4 fill-current mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M11 4c-3.855 0-7 3.145-7 7v28c0 3.855 3.145 7 7 7h28c3.855 0 7-3.145 7-7V11c0-3.855-3.145-7-7-7zm0 2h28c2.773 0 5 2.227 5 5v28c0 2.773-2.227 5-5 5H11c-2.773 0-5-2.227-5-5V11c0-2.773 2.227-5 5-5zm25.234 9.832l-13.32 15.723-8.133-7.586-1.363 1.465 9.664 9.015 14.684-17.324z" /></svg>
-                        3/5
-                      </span>
-                      <img src="https://i.imgur.com/OZaT7jl.png" className="rounded-full" alt='images'/>
-                    </div>
+                    
                   </div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">Check the meta tags</div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">
@@ -372,7 +371,7 @@ const Dashboard = () => {
             <div>
               <div className="rounded bg-gray-200 dark:bg-gray-800 p-3">
                 <div className="flex justify-between py-1 text-black dark:text-white">
-                  <h3 className="text-sm font-semibold">Tasks in DEVELOPMENT</h3>
+                  <h3 className="text-sm font-semibold">After Three month places</h3>
                   <svg className="h-4 fill-current text-gray-600 dark:text-gray-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z" /></svg>
                 </div>
                 <div className="text-sm text-black dark:text-gray-50 mt-2">
@@ -380,12 +379,7 @@ const Dashboard = () => {
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">Remove analytics code</div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">
                     Do a mobile first layout
-                    <div className="flex justify-between items-start mt-2 ml-2 text-white text-xs">
-                      <span className="bg-pink-600 rounded p-1 text-xs flex items-center">
-                        <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.8 0-1.5.7-1.5 1.5v.688C7.344 4.87 5 7.62 5 11v4.5l-2 2.313V19h18v-1.188L19 15.5V11c0-3.379-2.344-6.129-5.5-6.813V3.5c0-.8-.7-1.5-1.5-1.5zm-2 18c0 1.102.898 2 2 2 1.102 0 2-.898 2-2z" /></svg>
-                        2
-                      </span>
-                    </div>
+                    
                   </div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">Check the meta tags</div>
                   <div className="bg-white dark:bg-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded mt-1 border-b border-gray-100 dark:border-gray-900 cursor-pointer">
@@ -404,7 +398,7 @@ const Dashboard = () => {
             <div>
               <div className="rounded bg-gray-200 dark:bg-gray-800 p-3">
                 <div className="flex justify-between py-1 text-black dark:text-white">
-                  <h3 className="text-sm font-semibold">Tasks in QA</h3>
+                  <h3 className="text-sm font-semibold">Before Six month places</h3>
                   <svg className="h-4 fill-current text-gray-600 dark:text-gray-500 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z" /></svg>
                 </div>
                 <div className="text-sm text-black dark:text-gray-50 mt-2">
@@ -446,12 +440,12 @@ const Dashboard = () => {
                       <td className="px-4 py-3">
                         <div className="flex items-center text-sm">
                           <div className="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                            <img className="object-cover w-full h-full rounded-full" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" loading="lazy" />
+                            <img className="object-cover rounded-full" src={client1} alt="" />
                             <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p className="font-semibold">Hans Burger</p>
-                            <p className="text-xs text-gray-600 dark:text-gray-400">10x Developer</p>
+                            <p className="font-semibold">Mosraful Habib</p>
+                            <p className="text-xs text-gray-600 dark:text-gray-400">Full Stack Developer</p>
                           </div>
                         </div>
                       </td>
@@ -459,17 +453,17 @@ const Dashboard = () => {
                       <td className="px-4 py-3 text-xs">
                         <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"> Approved </span>
                       </td>
-                      <td className="px-4 py-3 text-sm">15-01-2021</td>
+                      <td className="px-4 py-3 text-sm">15-01-2023</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
                       <td className="px-4 py-3">
                         <div className="flex items-center text-sm">
                           <div className="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                            <img className="object-cover w-full h-full rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;facepad=3&amp;fit=facearea&amp;s=707b9c33066bf8808c934c8ab394dff6" alt="" loading="lazy" />
+                            <img className="object-cover rounded-full" src={client2} alt="" />
                             <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p className="font-semibold">Jolina Angelie</p>
+                            <p className="font-semibold">Habib Suzon</p>
                             <p className="text-xs text-gray-600 dark:text-gray-400">Unemployed</p>
                           </div>
                         </div>
@@ -478,17 +472,17 @@ const Dashboard = () => {
                       <td className="px-4 py-3 text-xs">
                         <span className="px-2 py-1 font-semibold leading-tight text-yellow-700 bg-yellow-100 rounded-full"> Pending </span>
                       </td>
-                      <td className="px-4 py-3 text-sm">23-03-2021</td>
+                      <td className="px-4 py-3 text-sm">23-03-2023</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
                       <td className="px-4 py-3">
                         <div className="flex items-center text-sm">
                           <div className="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                            <img className="object-cover w-full h-full rounded-full" src="https://images.unsplash.com/photo-1502720705749-871143f0e671?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;s=b8377ca9f985d80264279f277f3a67f5" alt="" loading="lazy" />
+                            <img className="object-cover rounded-full" src={client3} alt="" />
                             <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p className="font-semibold">Dave Li</p>
+                            <p className="font-semibold">Tony Stack</p>
                             <p className="text-xs text-gray-600 dark:text-gray-400">Influencer</p>
                           </div>
                         </div>
@@ -497,17 +491,17 @@ const Dashboard = () => {
                       <td className="px-4 py-3 text-xs">
                         <span className="px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-100 rounded-full dark:text-gray-100 dark:bg-gray-700"> Expired </span>
                       </td>
-                      <td className="px-4 py-3 text-sm">09-02-2021</td>
+                      <td className="px-4 py-3 text-sm">09-02-2023</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
                       <td className="px-4 py-3">
                         <div className="flex items-center text-sm">
                           <div className="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                            <img className="object-cover w-full h-full rounded-full" src="https://images.unsplash.com/photo-1551006917-3b4c078c47c9?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" loading="lazy" />
+                            <img className="object-cover rounded-full" src={client4} alt="" />
                             <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p className="font-semibold">Rulia Joberts</p>
+                            <p className="font-semibold">Pitter Parker</p>
                             <p className="text-xs text-gray-600 dark:text-gray-400">Actress</p>
                           </div>
                         </div>
@@ -516,17 +510,17 @@ const Dashboard = () => {
                       <td className="px-4 py-3 text-xs">
                         <span className="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"> Approved </span>
                       </td>
-                      <td className="px-4 py-3 text-sm">17-04-2021</td>
+                      <td className="px-4 py-3 text-sm">17-04-2023</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-400">
                       <td className="px-4 py-3">
                         <div className="flex items-center text-sm">
                           <div className="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                            <img className="object-cover w-full h-full rounded-full" src="https://images.unsplash.com/photo-1566411520896-01e7ca4726af?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" loading="lazy" />
+                            <img className="object-cover  rounded-full" src={client5} alt="" />
                             <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p className="font-semibold">Hitney Wouston</p>
+                            <p className="font-semibold">Doctor Strange</p>
                             <p className="text-xs text-gray-600 dark:text-gray-400">Singer</p>
                           </div>
                         </div>
@@ -535,7 +529,7 @@ const Dashboard = () => {
                       <td className="px-4 py-3 text-xs">
                         <span className="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700"> Denied </span>
                       </td>
-                      <td className="px-4 py-3 text-sm">11-01-2021</td>
+                      <td className="px-4 py-3 text-sm">11-01-2023</td>
                     </tr>
                   </tbody>
                 </table>
@@ -602,21 +596,21 @@ const Dashboard = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40">Dhaka, Street, State, Postal Code</div>
+                  <div className="ml-4 text-md tracking-wide font-semibold w-40">1216 Mirpur-2, Dhaka, Bangladesh</div>
                 </div>
       
                 <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-gray-500">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40">+880 1234567890</div>
+                  <div className="ml-4 text-md tracking-wide font-semibold w-40">+088 01700 000021</div>
                 </div>
       
                 <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-gray-500">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40">info@demo.com</div>
+                  <div className="ml-4 text-md tracking-wide font-semibold w-40">touristportal21@gmail.com</div>
                 </div>
               </div>
               <form className="p-6 flex flex-col justify-center">
